@@ -1,0 +1,206 @@
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.navbar {
+    background-color: pink;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3000;
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+
+.navbar .navbar-nav > li > a {
+    color: white !important;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-brand:hover {
+    color: plum !important;
+}
+
+.navbar-toggle {
+    border: none;
+    background: none;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-collapse.collapse {
+    background-color: pink;
+}
+
+.container-fluid{
+    padding: 60px 50px;
+}
+
+#home {
+    background-image: url('ux.jpg');
+    background-size: cover;
+}
+
+#home h1,
+h3 {
+    color: #fff;
+    font-weight: 600;
+}
+
+#home img {
+    border-radius: 10px;
+    max-width: 100%; /* Ensures the image doesn't exceed its parent container's width */
+    height: auto; /* Allows the image's height to adjust proportionally */
+}
+#about-me{
+    background-color: #f6f6f6;
+}
+#about-me p{
+    text-align: justify;
+}
+#about-me img{
+    border-radius: 500px;
+    height: 300px;
+    float: right;
+    margin-right: 50px;
+}
+.about-button a{
+    text-decoration: none;
+    color: #0070F0;
+    border: 1px solid #0070F0;
+    border-radius: 2px;
+    padding: 2px 5px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: pink;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3 ease;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #DD2A7B;
+}
+.social-links{
+    padding: 15px 20px;
+}
+.social-icon{
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-twitter{
+    color: #0070F0;
+}
+.fa-instagram{
+    color: #DD2A7B;
+}
+
+#skills{
+    background-color: beige;
+}
+#skills h2, p{
+    text-align: center;
+}
+#skills h3{
+    background-color: pink;
+    color: #800080;
+    padding: 15px 20px;
+}
+#skills ul{
+    background-color: white;
+    border: 1px solid black;
+    border-top: white;
+    padding: 14px 50px;
+}
+
+.box-exp{
+    background-color: bisque;
+}
+.box-exp p{
+    text-align: justify;
+}
+.box-exp2{
+    background-color: beige;
+}
+.box-exp2 p{
+    text-align: justify;
+}
+
+#experience h3{
+    color: #800080;
+}
+#contact {
+    padding: 60px 50px;
+    background-color: #f6f6f6;
+}
+
+#contact .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: pink;
+}
+
+footer{
+    background-color: beige;
+}
+footer .glyphicon{
+    color: #800080;
+}
+/* Animation Styles */
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
