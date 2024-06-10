@@ -4,12 +4,33 @@ h2{
 h4{
     text-align: center;
 }
+.main-header {
+    background-image: url('header\ stars.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 30px 10px;
+    color: #fff;
+    z-index: -1;   
+}
+
+.main-header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 3em; /* Adjust font size */
+    font-weight: 600;
+}
+
+.main-header strong p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Adjust font size */
+}
 .navbar {
-    background-color: pink;
+    background-color: #DD2A7B;
     border: none;
     margin: 0;
     border-radius: 0;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 3000;
@@ -44,7 +65,7 @@ h4{
 }
 
 .navbar-collapse.collapse {
-    background-color: pink;
+    background-color: #DD2A7B;
 }
 
 .container-fluid{
@@ -90,14 +111,14 @@ h3 {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: pink;
+    background-color: #DD2A7B;
     color: #fff;
     border-radius: 4px;
     transition: background-color 0.3 ease;
 }
 .btn:hover{
     color: #fff;
-    background-color: #DD2A7B;
+    background-color: #800080;
 }
 .social-links{
     padding: 15px 20px;
@@ -122,19 +143,32 @@ h3 {
 #skills{
     background-color: beige;
 }
-#skills h2, p{
-    text-align: center;
+.panel{
+    border: 1px solid pink;
+    border-radius: 0 !important;
+    transition: box-shadow 0.5s;
 }
-#skills h3{
-    background-color: pink;
-    color: #800080;
-    padding: 15px 20px;
+.panel:hover{
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+}
+.panel-heading {
+    color: white !important;
+    background-color: #DD2A7B !important; 
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+.panel-heading h3{
+    color:whitesmoke;
 }
 #skills ul{
     background-color: white;
-    border: 1px solid black;
     border-top: white;
     padding: 14px 50px;
+    text-align: justify;
 }
 
 .box-exp{
@@ -149,9 +183,22 @@ h3 {
 .box-exp2 p{
     text-align: justify;
 }
-
+#ezperience{
+    position: relative;
+}
 #experience h3{
     color: #800080;
+}
+#experience h4{
+    padding-top: 20px;
+}
+#experience .company-logo img{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
 }
 #contact {
     padding: 60px 50px;
@@ -161,14 +208,14 @@ h3 {
 #contact .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: pink;
+    color: #DD2A7B;
 }
 
 footer{
     background-color: beige;
 }
 footer .glyphicon{
-    color: #800080;
+    color: #DD2A7B;
 }
 /* Animation Styles */
 .slideanim {

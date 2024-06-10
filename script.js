@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
-    $(".btn, .navbar a, footer a[href='#myPage']").on("click", function (event) {
+    $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
       if (this.hash !== "") {
         event.preventDefault();
         var hash = this.hash;
